@@ -1,0 +1,30 @@
+.roof{
+  text-align: center;
+  color: #152772;
+  padding: 50px;
+}
+.particulars{
+  text-align: center;
+}
+.candidates-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.candidate-card{
+  flex: 1 1 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.candidate-image {
+  width: 50%;
+  height: auto;
+  max-height: 200px;
+}
+button{
+  background-color: #48af8d;
+  transition: .3s ease;
+}
+button:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,17 @@
+<div class="roof">
+  <h1>Vote for your class representative</h1>
+  <h3>You can only vote once!</h3>
+</div>
+
+<div class="candidates-container">
+  <div *ngFor="let candidate of candidates" class="candidate-card">
+    <div class="particulars">
+      <h2>{{candidate.name}}</h2>
+      <img [src]="candidate.imageUrl" alt="{{candidate.name}} Image" class="candidate-image">
+      <p>{{candidate.slogan}}</p>
+      <p>Number of Votes: {{candidate.numberOfVotes}}</p>
+      <button (click)="castsVote(8, candidate.id)" class="btn">Vote</button>
+
+    </div>
+  </div>
+</div>
